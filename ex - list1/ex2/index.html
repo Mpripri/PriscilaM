@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex2- Beatris, Giulia e Priscila</title>
+</head>
+<body>
+
+    <h1>Receba 4 palavras em um vetor e exiba em ordem alfabética</h1>
+    
+    <script>
+var palavra1, palavra2, palavra3, palavra4;
+
+palavra1 = prompt("Digite a primeira palavra: ");
+palavra2 = prompt("Digite a segunda palavra: ");
+palavra3 = prompt("Digite a terceira palavra: ");
+palavra4 = prompt("Digite a quarta palavra: ");
+
+const palavras = [palavra1, palavra2, palavra3, palavra4];
+
+palavras.sort();
+
+document.write("Palavras ordenadas: " + palavras.join(", ") + "<br>");
+    </script>
+</body>
+</html>

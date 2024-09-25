@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 1</title>
+    <link rel="stylesheet" href="ex1.css">
+</head>
+<h1>Array bidimensional 3x3-Soma dos VAlores</h1>
+<body>
+    <script>
+        let matriz = Array.from({ length: 3 }, () => Array(3).fill(0));
+        
+        matriz.forEach((linha, i) => {
+            linha.forEach((_, j) => {
+                matriz[i][j] = Number(prompt(`Digite o valor para matriz[${i}][${j}]:`));
+            });
+        });
+        
+        document.write("<h3>Tabela de Valores:</h3><table border='1'>");
+        
+        matriz.forEach(linha => {
+            document.write("<tr>");
+            linha.forEach(valor => {
+                document.write(`<td>${valor}</td>`);
+            });
+            document.write("</tr>");
+        });
+        
+        document.write("</table>");
+      
+        const soma = matriz.flat().reduce((acc, val) => acc + val, 0);
+        document.write(`<p>Soma de todos os números: ${soma}</p>`);
+    </script>
+</body>
+</html>

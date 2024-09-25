@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex5 -  Giulia, Priscila e Beatris</title>
+</head>
+<body>
+    
+    <h1>Crie 3 vetores com elementos diferentes e concatene-os. Exiba na página o resultado</h1>
+   
+    <h2>Beatris</h2>
+    <ul id="favBea"></ul>
+    
+    <h2>Giulia</h2>
+    <ul id="favGiu"></ul>
+    
+    <h2>Priscila</h2>
+    <ul id="favPri"></ul>
+
+    <h1>Todas as cores favoritas são:</h1>
+    <div id="resultado"></div>
+   
+    <script>
+        let bea = ['Vermelho', 'Roxo', 'Azul'];
+        let giu = ['Amarelo', 'Preto', 'Verde'];
+        let pri = ['Azul claro', 'Lilás', 'Fuxia'];
+
+        const favBea = document.getElementById('favBea');
+        const favGiu = document.getElementById('favGiu');
+        const favPri = document.getElementById('favPri');
+
+        bea.forEach(cor => {
+            const li = document.createElement('li');
+            li.textContent = cor;
+            favBea.appendChild(li);
+        });
+
+        giu.forEach(cor => {
+            const li = document.createElement('li');
+            li.textContent = cor;
+            favGiu.appendChild(li);
+        });
+        pri.forEach(cor => {
+            const li = document.createElement('li');
+            li.textContent = cor;
+            favPri.appendChild(li);
+        });
+        let favs = bea.concat(giu, pri);
+
+        const totalCores = document.getElementById('resultado');
+        totalCores.textContent = favs.join(', ');
+    </script>
+    
+</body>
+</html>

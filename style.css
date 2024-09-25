@@ -1,0 +1,85 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.texto-justificado {
+    text-align: justify;
+}
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   background-color: rgb(246, 246, 246);
+   
+   background-repeat: no-repeat;
+}
+
+.page{
+    display: flex;
+}
+.header{
+    width: 400px;
+    height: 200px;
+}
+
+.col1 {
+    width: 20%;
+    height: 200vh;
+    background-color: dimgrey;
+    text-decoration: none;
+    text-emphasis-color: white;
+    display: flex;
+    flex-direction: column;
+    
+
+}
+.col1 h1{
+    text-align: center;
+}
+.col1 a{
+    color: black;
+    margin: 5px;
+    padding: 5px;
+    text-decoration: none;
+}
+table, th, td{
+    border: 1px solid black;
+    height: 60%;
+    width: 20%;
+}
+.col2 {
+    display: inline-block;
+}
+.calendar {
+    width: 300px;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+.calendar h3 {
+    margin-bottom: 10px;
+}
+.calendar table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.calendar table, .calendar th, .calendar td {
+    border: 1px solid #ddd;
+}
+.calendar th, .calendar td {
+    padding: 10px;
+    text-align: center;
+}
+.calendar th {
+    background-color: #f4f4f4;
+}
+.calendar .prev-next {
+    margin: 10px 0;
+}
+button {
+    padding: 5px 10px;
+    margin: 0 5px;
+    cursor: pointer;
+}

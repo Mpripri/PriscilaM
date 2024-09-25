@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       var ladoA = parseFloat(prompt('Digite o 1° lado: '));
+        var ladoB = parseFloat(prompt('Digite o 2° lado: '));
+        var ladoC = parseFloat(prompt('Digite o 3° lado: '));
+        
+        var triangulo = Math.abs(ladoB - ladoC) < ladoA && ladoA < ladoB + ladoC && Math.abs(ladoC - ladoA) < ladoB && ladoB < ladoC + ladoA && Math.abs(ladoA - ladoB) < ladoC && ladoC < ladoA + ladoB;
+        var equilatero = ladoA === ladoB && ladoB === ladoC && ladoC === ladoA;
+        var escaleno = ladoA !== ladoB && ladoB !== ladoC && ladoC !== ladoA;
+        var isoceles = (ladoA === ladoB && ladoB === ladoC && ladoC !== ladoA) || (ladoA === ladoB && ladoB !== ladoC && ladoC === ladoA) || (ladoA !== ladoB && ladoB === ladoC && ladoC === ladoA);
+
+        console.log('Valores digitados: ' + ladoA + ', ' + ladoB + ', ' + ladoC);
+        console.log('Triângulo: ' + triangulo);
+        console.log('Equilátero: ' + equilatero);
+        console.log('Escaleno: ' + escaleno);
+        console.log('Isósceles: ' + isoceles);
+        if (triangulo) {
+            if (equilatero) {
+                document.write('O triângulo é equilátero.');
+            } else if (escaleno) {
+                document.write('O triângulo é escaleno.');
+            } else if (isoceles) {
+                document.write('O triângulo é isósceles.');
+            }
+        } else {
+            document.write('Os valores fornecidos não formam um triângulo.');
+        }
+        
+       
+        
+    </script> 
+</body>
+</html>

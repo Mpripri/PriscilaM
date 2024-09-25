@@ -1,0 +1,20 @@
+h1{
+    color:#8b008b ;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.card{
+        width: 200px;
+        background-color: rgb(246, 230, 255);
+        padding: 20px;
+        border: 1px solid rgb(255, 195, 232);
+        border-radius: 8px;
+        text-align: left;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-items: center;
+        justify-content: center;
+       
+}

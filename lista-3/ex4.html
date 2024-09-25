@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex2 - lista tres</title>
+</head>
+<body>
+  
+ <script>
+
+const empresa = {
+        salarioaumento: function(salario) {
+            if (salario <= 2500.00) {
+                return salario * 1.10;
+            } else {
+                return salario * 1.08;
+            }
+        },
+        Novosalario: function() {
+            let quantidadeFuncionarios = parseInt(prompt("Quantidade de funcionários:"));
+            
+            for (let i = 1; i <= quantidadeFuncionarios; i++) {
+                let salarioAtual = parseFloat(prompt("Digite o salário do funcionário ${i}:"));
+                
+                let salarioaumento = this.salarioaumento(salarioAtual);
+                
+                console.log(Novo salário do funcionário ${i}: R$ ${salarioaumento.toFixed(2)});
+            }
+        }
+    };
+    
+    empresa.imprimirNovoSalario();
+
+
+ </script>
+    
+
+</body>
+</html>

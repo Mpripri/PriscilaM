@@ -1,0 +1,15 @@
+body{
+    background-color: rgb(255, 176, 251);
+    color: white;
+}
+h1{
+    color: rgb(162, 0, 255);
+}
+button {
+    background-color: #ae98ff; /* Cor de fundo do botão */
+    color: white; /* Cor do texto do botão */
+    border: none; /* Remove borda do botão */
+    padding: 10px 15px; /* Espaçamento interno do botão */
+    border-radius: 4px; /* Cantos arredondados */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+}

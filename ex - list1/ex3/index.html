@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exer3- giu, pri e bea</title>
+</head>
+<body>
+    <h1>Receba 5 números e exiba-os em ordem decrescente.</h1>
+    <script>
+var n1, n2, n3, n4;
+
+n1 = prompt("Digite o primeiro número: ");
+n2 = prompt("Digite o segundo número: ");
+n3 = prompt("Digite o terceiro número: ");
+n4 = prompt("Digite o quarto número: ");
+
+const numeros = [n1, n2, n3, n4];
+
+numeros.sort((a, b) => b - a);
+
+document.write("Números em ordem decrescente: " + numeros.join(", ") + "<br>");
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 4</title>
+    <link rel="stylesheet" href="ex4.css">
+</head>
+<h1>Array 3x3-Valores Recebidos via prompt contendo números e strings</h1>
+<body>
+    <script>
+
+        let matriz = Array.from({ length: 3 }, () => Array(3).fill(''));
+
+        matriz.forEach((linha, i) => {
+            linha.forEach((_, j) => {
+                matriz[i][j] = prompt(`Digite o valor (número ou string) para matriz[${i}][${j}]:`);
+            });
+        });
+
+
+        document.write("<h3>Tabela de Valores e Tipos:</h3>");
+        matriz.forEach(linha => {
+            linha.forEach(valor => {
+                document.write(`Valor: ${valor}, Tipo: ${typeof valor}<br>`);
+            });
+        });
+    </script>
+</body>
+</html>

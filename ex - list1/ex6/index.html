@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex6 - Giulia, Priscila e Beatris</title>
+</head>
+<body>
+    <h1>Receba 3 números em um vetor, se a soma exceder 100, deve-se exibir o maior valor, do contrário exibe-se o menor valor.</h1>
+    <script>
+
+const numeros = [];
+
+for (let i = 0; i < 3; i++) {
+    let numero = prompt(`Digite o número ${i + 1}:`);
+    numeros.push(Number(numero));
+}
+
+let soma = 0;
+for (let i = 0; i < numeros.length; i++) {
+    soma += numeros[i];
+}
+
+if (soma > 100) {
+    let maior = Math.max(...numeros);
+    document.write("A soma excede 100. O maior valor é:", maior);
+} else {
+    let menor = Math.min(...numeros);
+    document.write("A soma não excede 100. O menor valor é:", menor);
+}
+
+    </script>
+</body>
+</html>
